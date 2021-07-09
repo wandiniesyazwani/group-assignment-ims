@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<title>Pattylicious</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("image/header2.jpg");
+  min-height: 100%;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Open from 10am to 12pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">PATTY<br>LICIOUS</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>PATTY<br>LICIOUS</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-blue-grey w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Burger');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-pale-blue">Burger</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-pale-blue">Pasta</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Dessert');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-pale-blue">Dessert</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-pale-blue">Drinks</div>
+      </a>
+    </div>
+
+    <div id="Burger" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Ribeye Burger</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM18.00</span></h1>
+      <img src="image/burger1.jpg" style="width:230px">
+      <p class="w3-text-grey">Fresh tomatoes, 1/4 pound Ribeye patty, Fresh salad, Honey mustard mayo </p>
+      <hr>
+
+      <h1><b>Lamb Burger</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM20.00</span></h1>
+      <img src="image/burger3.jpg" style="width:230px">
+      <p class="w3-text-grey">Juicy lamb patty, Minty mayo, Double American cheese</p>
+      <hr>
+      
+      <h1><b>Smashed Burger</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM13.00</span></h1>
+      <img src="image/burger2.jpg" style="width:230px">
+      <p class="w3-text-grey">Fresh tomatoes, Fresh Salad, Mozzarella, Crispy chicken</p>
+      <hr>
+
+      <h1><b>Smokey Chicken Burger</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM18.00</span></h1>
+      <img src="image/burger6.jpg" style="width:280px">
+      <p class="w3-text-grey">Fresh tomatoes, Mozzarella, Hot pepporoni, Hot sausage, Chicken</p>
+      <hr>
+
+      <h1><b>Smokey Beef Burger</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">RM20.00</span></h1>
+      <img src="image/burger4.jpg" style="width:330px">
+      <p class="w3-text-grey">Fresh tomatoes, Mozzarella, Hot pepporoni, Hot sausage, Beef</p>
+      <hr>
+
+      <h1><b>Big Lava Burger</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">RM17.00</span></h1>
+      <img src="image/burger5.jpg" style="width:300px">
+      <p class="w3-text-grey">Fresh tomatoes, Mozzarella, Fresh pineapple, Bacon, Fresh basil</p>
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Aglio Olio</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">RM15.00</span></h1>
+      <img src="image/pasta1.jpg" style="width:230px">
+      <p class="w3-text-grey">Prawn, Squid, Mushroom, Capsicum, Chili flakes </p>
+      <hr>
+   
+      <h1><b>Bolognese</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM14.00</span></h1>
+      <img src="image/pasta2.jpg" style="width:230px">
+      <p class="w3-text-grey">Meatball, Ground meat, Tomatoes paste, Parmesan cheese</p>
+      <hr>
+      
+      <h1><b>Carbonara</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM14.00</span></h1>
+      <img src="image/pasta3.jpg" style="width:230px">
+      <p class="w3-text-grey">Fresh milk, Slice Cheese, Blackpepper, Bacon</p>
+      <hr>
+
+      <h1><b>Salted Egg</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM15.00</span></h1>
+      <img src="image/pasta4.jpg" style="width:270px">
+      <p class="w3-text-grey">Crispy chicken, Butter milk, Salted Egg</p>
+    </div>
+
+
+    <div id="Dessert" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Biscoff Cheese Cake</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">RM14.00/slice</span></h1>
+      <img src="image/dessert2.jpg" style="width:230px">
+      <p class="w3-text-grey">Ask the waiter</p>
+      <hr>
+   
+      <h1><b>Green Tea Muffin</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM6.00</span></h1>
+      <img src="image/dessert1.jpg" style="width:230px">
+      <p class="w3-text-grey">Ask the waiter</p>
+      <hr>
+      
+      <h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM5.00</span></h1>
+      <img src="image/dessert3.jpg" style="width:250px">
+      <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+      <hr>
+      
+      <h1><b>Ice Cream Duyan</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM7.00</span></h1>
+      <img src="image/dessert4.jpg" style="width:230px">
+      <p class="w3-text-grey">Durian musang king</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Caramel Latte</b> <span class="w3-tag w3-grey w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">RM8.00</span></h1>
+      <img src="image/caramel.jpg" style="width:250px">
+      <p class="w3-text-grey">HOT/COLD</p>
+      <hr>
+
+      <h1><b>Expresso</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM8.00</span></h1>
+      <img src="image/coffee.jpg" style="width:280px">
+      <p class="w3-text-grey">HOT/COLD</p>
+      <hr>
+   
+      <h1><b>Strawberry Milkshake</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM12.00</span></h1>
+      <img src="image/strawberry.jpg" style="width:210px">
+      <p class="w3-text-grey">COLD ONLY</p>
+      <hr>
+      
+      <h1><b>Lotus Biscoff Milkshake</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM12.00</span></h1>
+      <img src="image/lotus.jpg" style="width:210px">
+      <p class="w3-text-grey">COLD ONLY</p>
+      <hr>
+      
+      <h1><b>Oreo Milkshake</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM12.00</span></h1>
+      <img src="image/oreo.jpg" style="width:210px">
+      <p class="w3-text-grey">COLD ONLY</p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-orange w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>Love Burger? Enjoy Burger Delivery With PATTYLICIOUS! Burger is the world’s favourite food! Whether meaty, vegetarian or halal, find different burgers in Malaysia. At PATTYLICIOUS, we offer endless flavours with local flair! Pair your favourite slice and delicious toppings with melting premium cheese for the perfect burger! For convenience, order delivery or takeaway from your nearest outlet! Don’t forget our promotions that can feed a single person up to big families!</p>
+    <p><strong>The Chef?</strong> Mr. Khairul Aming <img src="image/khairulaming.jpg" style="width:180px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>We are proud of our interiors.</p>
+    <img src="image/restaurant.jpg" style="width:710px" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Opening Hours</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Mon & Tue CLOSED</p>
+        <p>Wednesday 10.00 - 24.00</p>
+        <p>Thursday 10:00 - 24:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Friday 10:00 - 12:00</p>
+        <p>Saturday 10:00 - 23:00</p>
+        <p>Sunday Closed</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="image/location.png" class="w3-image w3-greyscale" style="width:1700px;" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-pink w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>Find us at Lot 301, Jalan Sultan Ibrahim, 16010, Kota Bharu, Kelantan or call us at 09-6904740</p>
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2021-07-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+
+  <blockquote class="w3-panel w3-center w3-light-grey">
+    <p class="w3-xxlarge"><i>"A BURGER WITHOUT A CHEESE LIKE A HUG WITHOUT A SQUEEZE"</i></p>
+    <p>PATTYLICIOUS</p>
+  </blockquote> 
+
+</div>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-40 w3-center" id="team">
+
+<h2>Meet the team of Pattylicious:</h2>
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+  <img src="image/ani.jpg" alt="Boss" style="width:60%" class="w3-circle w3-hover-opacity">
+  <h3>WAN DINIE SYAZWANI</h3>
+  <p>OPERATION MANAGER</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="image/ecah.jpg" alt="Boss" style="width:60%" class="w3-circle w3-hover-opacity">
+  <h3>NURUL AISYAH</h3>
+  <p>FINANCIAL MANAGER</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="image/cha.jpg" alt="Boss" style="width:60%" class="w3-circle w3-hover-opacity">
+  <h3>SITI NUR SYAMIMI</h3>
+  <p>MARKETING MANAGER</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="image/mimi.jpg" alt="Boss" style="width:60%" class="w3-circle w3-hover-opacity">
+  <h3>WAN NURUL SYAMIMI</h3>
+  <p>ADMINISTRATION MANAGER</p>
+</div>
+
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-purple w3-greyscale w3-padding-48 w3-xxlarge">
+  <p>Prepared by PATTYLICIOUS.COM </p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-pale-blue", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-pale-blue";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
